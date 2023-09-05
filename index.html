@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><link rel=icon href=favicon.ico><title>国土空间规划“一张图”实施监督信息系统</title><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><script src=config.js></script><script>const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.onload = function () {
+          /*720代表设计师给的设计稿的宽度，你的设计稿是多少，就写多少;100代表换算比例，这里写100是
+          为了以后好算,比如，你测量的一个宽度是100px,就可以写为1rem,以及1px=0.01rem等等*/
+          getRem(750, 100)
+        };
+        window.onresize = function () {
+           getRem(750, 100)
+        };
+        function getRem(pwidth, prem) {
+          var html = document.getElementsByTagName("html")[0];
+          var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+          html.style.fontSize = oWidth / pwidth * prem + "px";
+          // $("body").show()
+         var ele= document.getElementById("body")
+         ele.style.display='block'
+         ele.classList.add("mobileBody")
+        }
+      } else {
+      console.log('当前在PC端');
+      }</script><style>*{
+        font-family: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+      }
+      pre{
+        font-family: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+        word-wrap: break-word;
+      }
+      .markdown-body{
+        padding:0.05rem!important ;
+      }
+      .markdown-body pre code, .markdown-body pre  {
+        background-color: #1d1b1b!important;
+        color: #fff!important;
+      }
+      .markdown-body pre code, .markdown-body pre  {
+        background-color: #5C8AD7!important;
+        color: #fff!important;
+      }
+      .mobileRight  .markdown-body pre code,.mobileRight .markdown-body pre  {
+        background-color: #5C8AD7!important;
+        color: #fff!important;
+      }
+      body{
+        background: #fff!important;
+      }
+      .mobileBody .el-message-box{
+        width: 6rem;
+      }
+      .mobileBody  .markdown-body img{
+        max-width: 12rem!important;
+      }
+      .imgbox {
+        overflow-x: auto;
+      }
+      .mobileLeft .zz-tree .customTree{
+        text-indent: 10px!important;
+      }</style><link href=css/chunk-1d52bb94.f56e52f3.css rel=prefetch><link href=css/chunk-29d3fcee.69144dff.css rel=prefetch><link href=css/chunk-357ea596.dc0dcb2f.css rel=prefetch><link href=css/chunk-3bba5c38.16e12260.css rel=prefetch><link href=css/chunk-4eda6b62.d69b6ba2.css rel=prefetch><link href=css/chunk-73b9ed1a.7292be63.css rel=prefetch><link href=css/chunk-7c28b18d.0e433876.css rel=prefetch><link href=css/chunk-7cfac1de.ba85e105.css rel=prefetch><link href=css/chunk-c4a472f8.8d8d943b.css rel=prefetch><link href=css/chunk-d54160e0.7781c5d6.css rel=prefetch><link href=css/chunk-e464a840.cf1bc086.css rel=prefetch><link href=js/chunk-1d52bb94.b3b9a6d2.js rel=prefetch><link href=js/chunk-29d3fcee.adab493a.js rel=prefetch><link href=js/chunk-357ea596.3a30f28b.js rel=prefetch><link href=js/chunk-3bba5c38.266199ff.js rel=prefetch><link href=js/chunk-4eda6b62.2a32f264.js rel=prefetch><link href=js/chunk-73b9ed1a.d45009db.js rel=prefetch><link href=js/chunk-7c28b18d.6060886d.js rel=prefetch><link href=js/chunk-7cfac1de.80a8f70b.js rel=prefetch><link href=js/chunk-c4a472f8.e45e1b39.js rel=prefetch><link href=js/chunk-d54160e0.8111347b.js rel=prefetch><link href=js/chunk-e464a840.f270f679.js rel=prefetch><link href=css/app.21aad904.css rel=preload as=style><link href=css/chunk-vendors.20137264.css rel=preload as=style><link href=js/app.a6287fad.js rel=preload as=script><link href=js/chunk-vendors.432b4c9b.js rel=preload as=script><link href=css/chunk-vendors.20137264.css rel=stylesheet><link href=css/app.21aad904.css rel=stylesheet></head><body id=body><div id=app></div><script src=js/chunk-vendors.432b4c9b.js></script><script src=js/app.a6287fad.js></script></body><script>// function resetZoom(){
+    //   var bl;
+    //   var n = window.innerWidth-1300;
+    //   if(n==0){
+    //     b1=0.75
+    //   }else{
+    //     bl = n/2000+0.70;
+    //   }
+    //   if (bl>1){
+    //     bl = 1
+    //   }
+    //   if(bl<0.75){
+    //     bl = 0.75
+    //   }
+    //   document.body.style.zoom = bl;
+    // }
+    // window.onload=function(){
+    //   resetZoom();
+    // }</script></html>
